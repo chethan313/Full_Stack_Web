@@ -160,7 +160,7 @@ Full_Stack_Web/
 ### 1️⃣ Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone <https://github.com/chethan313/Full_Stack_Web.git>
 cd Full_Stack_Web
 ```
 
