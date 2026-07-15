@@ -10,7 +10,6 @@
 
 **A professional, production-ready Full Stack Task Management System**
 
-[Live Demo](#) · [Report Bug](#) · [Request Feature](#)
 
 </div>
 
