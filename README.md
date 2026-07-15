@@ -359,12 +359,12 @@ AI assistance (Claude/ChatGPT) was used for:
 - Generating boilerplate CRUD code patterns
 - Debugging TypeScript compilation errors
 - Improving documentation and README formatting
-
+- Angular routing with lazy loading and guards
+- Authentication flow and JWT strategy
+  
 **The developer independently implemented:**
 - Complete application architecture design
-- Authentication flow and JWT strategy
 - MongoDB schema design with indexes and virtuals
-- Angular routing with lazy loading and guards
 - Custom form validators and reactive forms
 - HTTP interceptor for token injection
 - Dashboard statistics aggregation queries
