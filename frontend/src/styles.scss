@@ -1,0 +1,320 @@
+/* ==========================================
+   Smart Task Manager - Global Styles
+   Netflix-inspired Dark Design System
+   ========================================== */
+
+/* Google Fonts - Netflix-style Typography */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
+/* Angular Material Theme */
+@import '@angular/material/prebuilt-themes/purple-green.css';
+
+/* ==========================================
+   CSS Variables
+   ========================================== */
+:root {
+  --color-primary: #E50914;
+  --color-primary-dark: #8B0000;
+  --color-primary-light: rgba(229, 9, 20, 0.15);
+
+  --color-bg: #09090b;
+  --color-bg-card: rgba(255, 255, 255, 0.03);
+  --color-bg-card-hover: rgba(255, 255, 255, 0.06);
+  --color-border: rgba(255, 255, 255, 0.08);
+
+  --color-text: #ffffff;
+  --color-text-muted: rgba(255, 255, 255, 0.55);
+  --color-text-faint: rgba(255, 255, 255, 0.3);
+
+  --font-display: 'Bebas Neue', 'Arial Narrow', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --radius-xl: 28px;
+
+  --shadow-card: 0 8px 30px rgba(0, 0, 0, 0.3);
+  --shadow-elevated: 0 20px 60px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 30px rgba(229, 9, 20, 0.2);
+
+  --transition-fast: 0.15s ease;
+  --transition-normal: 0.25s ease;
+  --transition-slow: 0.4s ease;
+}
+
+/* ==========================================
+   CSS Reset & Base
+   ========================================== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(229, 9, 20, 0.5);
+}
+
+/* ==========================================
+   Typography
+   ========================================== */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-body);
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.3;
+}
+
+/* Display headings use Bebas Neue */
+.display-heading {
+  font-family: var(--font-display);
+  letter-spacing: 1px;
+}
+
+/* ==========================================
+   Angular Material Global Overrides
+   ========================================== */
+
+/* Dialog dark theme */
+.dark-dialog .mat-mdc-dialog-container {
+  --mdc-dialog-container-color: #1a1a1f;
+  --mdc-dialog-subhead-color: #fff;
+  --mdc-dialog-supporting-text-color: rgba(255, 255, 255, 0.6);
+  border-radius: 16px !important;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Snackbar toast styles */
+.snack-success .mdc-snackbar__surface {
+  background: #1b5e20 !important;
+  border: 1px solid rgba(76, 175, 80, 0.4) !important;
+  border-radius: 12px !important;
+}
+
+.snack-error .mdc-snackbar__surface {
+  background: #7f0000 !important;
+  border: 1px solid rgba(229, 9, 20, 0.4) !important;
+  border-radius: 12px !important;
+}
+
+.snack-warning .mdc-snackbar__surface {
+  background: #e65100 !important;
+  border: 1px solid rgba(255, 152, 0, 0.4) !important;
+  border-radius: 12px !important;
+}
+
+.snack-info .mdc-snackbar__surface {
+  background: #0d47a1 !important;
+  border: 1px solid rgba(33, 150, 243, 0.4) !important;
+  border-radius: 12px !important;
+}
+
+.mdc-snackbar__label {
+  color: #fff !important;
+  font-family: var(--font-body) !important;
+}
+
+/* Menu dark theme */
+.mat-mdc-menu-panel {
+  background: #1a1a1f !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 12px !important;
+  box-shadow: var(--shadow-elevated) !important;
+}
+
+.mat-mdc-menu-item {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.mat-mdc-menu-item:hover {
+  background: rgba(255, 255, 255, 0.06) !important;
+}
+
+.mat-mdc-menu-item .mat-icon {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* Select dropdown dark */
+.mat-mdc-select-panel {
+  background: #1a1a1f !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 10px !important;
+}
+
+.mat-mdc-option {
+  color: rgba(255, 255, 255, 0.75) !important;
+}
+
+.mat-mdc-option.mdc-list-item--selected {
+  background: rgba(229, 9, 20, 0.15) !important;
+}
+
+.mat-mdc-option:hover {
+  background: rgba(255, 255, 255, 0.06) !important;
+}
+
+/* Toolbar styling */
+.mat-toolbar {
+  font-family: var(--font-body) !important;
+}
+
+/* Progress bar */
+.mat-mdc-progress-bar {
+  --mdc-linear-progress-track-color: rgba(255, 255, 255, 0.08);
+  height: 6px;
+  border-radius: 3px;
+}
+
+/* Chips */
+.mat-mdc-chip-set {
+  gap: 6px;
+}
+
+/* Icon button hover */
+.mat-mdc-icon-button:hover {
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Paginator */
+.mat-mdc-paginator {
+  background: transparent !important;
+}
+
+/* Datepicker */
+.mat-datepicker-popup {
+  border-radius: 12px !important;
+}
+
+/* ==========================================
+   Utility Classes
+   ========================================== */
+.text-primary { color: var(--color-primary); }
+.text-muted { color: var(--color-text-muted); }
+.text-faint { color: var(--color-text-faint); }
+
+.bg-glass {
+  background: var(--color-bg-card);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--color-border);
+}
+
+.rounded-lg { border-radius: var(--radius-lg); }
+.rounded-xl { border-radius: var(--radius-xl); }
+
+.shadow-card { box-shadow: var(--shadow-card); }
+.shadow-glow { box-shadow: var(--shadow-glow); }
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ==========================================
+   Animation Classes
+   ========================================== */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes shimmer {
+  0% { background-position: -1000px 0; }
+  100% { background-position: 1000px 0; }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease forwards;
+}
+
+/* Skeleton loader */
+.skeleton {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.04) 25%,
+    rgba(255, 255, 255, 0.08) 50%,
+    rgba(255, 255, 255, 0.04) 75%
+  );
+  background-size: 1000px 100%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: var(--radius-sm);
+}
+
+/* ==========================================
+   View Transitions (Angular 19)
+   ========================================== */
+::view-transition-old(root) {
+  animation: fadeIn 0.15s ease-out reverse;
+}
+
+::view-transition-new(root) {
+  animation: fadeIn 0.2s ease-in;
+}
+
+/* ==========================================
+   Responsive Breakpoints
+   ========================================== */
+@media (max-width: 1200px) {
+  :root { font-size: 15px; }
+}
+
+@media (max-width: 768px) {
+  :root { font-size: 14px; }
+}
+
+@media (max-width: 480px) {
+  :root { font-size: 13px; }
+}
