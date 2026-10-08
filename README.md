@@ -431,7 +431,7 @@ feat: Add confirm delete dialog component
 feat: Add environment configuration for dev/prod
 fix: Fix Angular template arrow function compatibility
 feat: Write comprehensive README documentation
-chore: Final project submission
+chore: Final project submission and prodution.
 ```
 
 ---
