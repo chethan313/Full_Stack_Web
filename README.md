@@ -22,7 +22,7 @@ Smart Task Manager is a feature-complete full-stack web application that enables
 ## ✨ Features
 
 ### 🔐 Authentication
-- User registration with email & password
+- User registration with email & varified password.
 - JWT-based login with 7-day token expiry
 - Password strength indicator
 - bcrypt password hashing (salt rounds: 12)
