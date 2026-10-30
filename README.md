@@ -17,7 +17,7 @@
 
 ## 📋 Project Overview
 
-Smart Task Manager is a feature-complete full-stack web application that enables professionals to organize, track, and manage their tasks with efficiency. Built with a Netflix-inspired dark design system, it provides a premium user experience with real-time task statistics, priority management, and comprehensive filtering capabilities and many more you can do to manage your daily tasks and improve the work efficiency and save work load.
+Smart Task Manager is a feature-complete full-stack web application that enables professionals to organize, track, and manage their tasks with efficiency. Built with a Netflix-inspired dark design system, it provides a premium user experience with real-time task statistics, priority management, and comprehensive filtering capabilities and many more you can do to manage your daily tasks and improve the work efficiency and save work load and improve quality work.
 
 ## ✨ Features
 
