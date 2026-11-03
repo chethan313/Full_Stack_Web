@@ -438,7 +438,7 @@ chore: Final project submission and prodution.
 
 ## 📄 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License and owned by Chethan P S.
 
 ---
 
